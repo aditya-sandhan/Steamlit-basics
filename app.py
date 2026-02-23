@@ -1,4 +1,8 @@
 import streamlit as st
 
-st.title("Welcome to Dude")
-st.write("this is aditya sandhan")
+st.title("Simple chatbot")
+Question= st.text_input("Ask me anything: ", key="question")    
+
+if st.button("Start Chatting"):
+    st.write(f"You asked: {Question}")
+    st.write("chatbot is thinking...")
